@@ -1,0 +1,152 @@
+body {
+  background: #23074d; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #cc5333,
+    #23074d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #cc5333,
+    #23074d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.title {
+  margin: 40px auto;
+  width: fit-content;
+  color: white;
+}
+.form {
+  margin: 100px auto;
+  width: fit-content;
+  gap: 30px;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+.form div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.btn {
+  background: #0f0c29; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  outline: none;
+  color: white;
+  font-style: oblique;
+}
+.btn:hover {
+  color: #cee1f5;
+}
+.text {
+  width: 353px;
+  height: 33px;
+  outline: none;
+  border: navajowhite;
+  color: rgb(14, 13, 13);
+  padding-left: 20px;
+  border-radius: 6px;
+}
+/* Component Todo List */
+.todo-list ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  align-items: center;
+  padding: 20px;
+}
+/* Component Todo */
+.item-section {
+  background: linear-gradient(to left, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  height: 50px;
+  border-radius: 5px;
+}
+.btn-delete {
+  right: 0;
+  position: absolute;
+  width: 100px;
+  height: 41px;
+  color: white;
+  background: #ed213a;
+  background: -webkit-linear-gradient(to left, #93291e, #ed213a);
+  background: linear-gradient(to left, #202020, #ed213a);
+  border: navajowhite;
+  border-radius: 39px;
+}
+.btn-complete {
+  right: 110px;
+  position: absolute;
+  width: 100px;
+  height: 41px;
+  color: white;
+  background: #ed213a;
+  background: -webkit-linear-gradient(to left, #202020, #35f454);
+  background: linear-gradient(to left, #202020, #35f454);
+  border: navajowhite;
+  border-radius: 39px;
+}
+.item-list {
+  color: black;
+  font-family: cursive;
+  font-weight: 700;
+  padding-left: 30px;
+}
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.select-list {
+  background: linear-gradient(to right, #182848, #4b6cb7);
+  background-color: bisque;
+  width: 146px;
+  height: 38px;
+  padding-left: 10px;
+  color: white;
+  border-radius: 2px;
+}
+/* X-Small devices (portrait phones, less than 576px*/
+@media (max-width: 575.98px) {
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .form {
+    flex-direction: column;
+  }
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+}
+
+/* // XX-Large devices (larger desktops)
+// No media query since the xxl breakpoint has no upper bound on its width */
